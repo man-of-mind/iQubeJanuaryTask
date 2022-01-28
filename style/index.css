@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+.navigation {
+    padding: 5%;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid hsl(321, 100%, 78%);
+    border-radius: 25px;
+    color: hsl(321, 100%, 78%);
+    padding: 8px 16px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: hsl(322, 65%, 87%);
+    border: 2px solid hsl(322, 65%, 87%);
+}
+
+.community_section {
+    margin: 25px;
+    width: auto;
+    height: auto;
+    /*    position: relative;
+*/
+    padding-top: 100px;
+}
+
+.section_child {
+    /*    position: absolute;
+*/
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    margin: -25px 0 0 -25px;
+    text-align: center;
+}
+
+.community_section .section_child h1 {
+    font-family: 'Poppins';
+    font-size: 45px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    padding-bottom: 30px;
+}
+
+.community_section .section_child p {
+    font-weight: 400;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+    color: hsl(192, 100%, 9%);
+}
+
+.getting_started_btn {
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 16px 56px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.getting_started_btn:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+#image {
+    margin: 10%;
+}
+
+.stat_container {
+    display: flex;
+    grid-template-columns: auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.stat_container_child {
+    padding: 10px;
+}
+
+.stat_container_child h2 {
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    font-size: 70px;
+    text-align: justify;
+}
+
+.paragraph {
+    padding-top: 15px;
+    color: hsl(207, 5%, 61%);
+    font-size: 20px;
+}
+
+.illustration_container {
+    display: flex;
+    grid-template-columns: auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.heading {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
