@@ -76,8 +76,8 @@
                     <div style="padding: 40px;">
                         <img src="img/illustration-your-users.svg" style="width: 100%">
                     </div>
-                    <div class="users">
-                        <h1 id="text_heading" style="padding-bottom: 15px; padding-top: 15px">Your Users</h1>
+                    <div class="users" id="mobile_resp">
+                        <h1 id="text_heading" style="padding-bottom: 15px; padding-top: 15px;">Your Users</h1>
                         <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
                             once signed in to your app, your users can start chatting immediately. </p>
                     </div>
@@ -97,9 +97,9 @@
                         <h3 style="color: white; padding-bottom: 15px;">NEWSLETTER</h3>
                         <p style="color: white; padding-bottom: 25px;">To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never 
                             send you spam or pass on your email address</p>
-                        <form action="">
+                        <form name="subscribeForm" action="" onsubmit="return subscribe()" method="post">
                             <label for="fname"></label>
-                            <input type="text" id="fname" name="fname">
+                            <input required type="email" id="fname" name="fname">
                             <input type="submit" value="Subscribe">
                         </form>
                     </div>
@@ -127,5 +127,18 @@
                 </div>
             </footer>
         </main>
+        <script>
+            function subscribe() {
+                let email = document.forms["subscribeForm"]["fname"].value;
+                if (email == "") {
+                  alert("Email must be filled out");
+                  return false;
+                } else {
+                    console.log(email);
+                    alert("Subscription added sucessfully!");
+                    return true;
+                }
+              }
+        </script>
     </body>
 </html>
