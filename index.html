@@ -11,12 +11,13 @@
         <title>Frontend Mentor | Huddle landing page with curved sections</title>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/b31e06099e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="navigation" style="padding-top: 35px;">
+        <header class="navigation">
             <nav>
-                <a href="#"> <img src="img/logo.svg" alt="Huddle mentor"></a>
-                <div class="button" style="float:right;"> Try it Free </div>
+                <a href="#"> <img id="mobile_logo" src="img/logo.svg" alt="Huddle mentor"></a>
+                <div class="button"> Try it Free </div>
             </nav>
         </header>
         <main>
@@ -28,10 +29,10 @@
                     <div class="getting_started_btn"> Get Started For Free </div>
                 </div>
             </section>
-            <figure id="image">
-                <img src="img/screen-mockups.svg" alt="" style="width:100%; height: 700px">
+            <figure style="margin: 20% 10% 20% 10%">
+                <img src="img/screen-mockups.svg" style="width: 100%;">
             </figure>
-            <section class="stat_container" style="padding-bottom: 5%;">
+            <section class="stat_container">
                 <div class="stat_container_child">
                     <img src="img/icon-communities.svg" alt="">
                     <h2>1.4k+</h2>
@@ -44,60 +45,70 @@
                 </div>
             </section>
             <section>
-                <img src="img/bg-section-top-desktop-1.svg" alt="" style="width:100%; display: block;">
+                <img id="svg_images" src="img/bg-section-top-desktop-1.svg">
                 <div class="illustration_container">
-                    <div style="padding-top: 15%; text-align: justify;">
-                        <h1 style="padding-bottom: 15px; padding-top: 15px">Grow Together</h1>
-                        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-                            Think of the insightful conversations you miss out on with a feedback form. </p>
-                    </div>
-                    <div style="padding: 40px;">
+                    <div style="padding: 40px; padding-left: 45px;">
                         <img src="img/illustration-grow-together.svg" style="width: 100%">
+                    </div>
+                    <div style="padding-top: 15%; text-align: justify;">
+                        <h1 id="text_heading" style="padding-bottom: 15px; padding-top: 15px">Grow Together</h1>
+                        <p id="sentence">Generate meaningful discussions with your audience and build a strong, loyal community. 
+                            Think of the insightful conversations you miss out on with a feedback form. </p>
                     </div>
                 </div>
                 <img src="img/bg-section-bottom-desktop-1.svg" style="width: 100%";>
             </section>
             <section style="margin-top: 10%; margin-bottom: 10%;">
-                <div class="illustration_container" style="background-color: white;">
+                <div class="user_container" style="background-color: white;">
                     <div>
                         <img src="img/illustration-flowing-conversation.svg" style="width: 100%;">
                     </div>
-                    <div style="padding-top: 120px; padding-left: 100px; float: right;">
-                        <h1 style="padding-bottom: 25px;">Flowing Conversations</h1>
-                        <p style="text-align: start;">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+                    <div class="flowing_user">
+                        <h1 id="text_heading" style="padding-bottom: 25px;">Flowing Conversations</h1>
+                        <p id="user_flow">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
                             just-in-time loading for a more natural flow.</p>
                     </div>
                 </div>
             </section>
             <section>
-                <img src="img/bg-section-top-desktop-2.svg" alt="" style="width:100%; display: block;">
-                <div class="illustration_container">
-                    <div style="padding-top: 15%; padding-right: 150px;">
-                        <h1 style="padding-bottom: 15px; padding-top: 15px">Your Users</h1>
-                        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-                            once signed in to your app, your users can start chatting immediately. </p>
-                    </div>
+                <img id="svg_images" src="img/bg-section-top-desktop-2.svg" alt="">
+                <div class="user_container">
                     <div style="padding: 40px;">
                         <img src="img/illustration-your-users.svg" style="width: 100%">
+                    </div>
+                    <div class="users">
+                        <h1 id="text_heading" style="padding-bottom: 15px; padding-top: 15px">Your Users</h1>
+                        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+                            once signed in to your app, your users can start chatting immediately. </p>
                     </div>
                 </div>
                 <img src="img/bg-section-bottom-desktop-2.svg" style="width: 100%";>
             </section>
             <section>
                 <div class="heading">
-                    <h1 style="padding-bottom: 25px;">Ready To Build Your Community?</h1>
+                    <h1 id="text_heading" style="padding-bottom: 25px;">Ready To Build Your Community?</h1>
                     <div class="getting_started_btn"> Get Started For Free </div>
                 </div>
             </section>
             <footer>
-                <img src="img/bg-footer-top-desktop.svg" style="width: 100%; display: block;">
-                <div class="stat_container" style="padding-top: 5%; padding-bottom: 5%; background-color: hsl(192, 100%, 9%);">
-                    <div class="stat_container_child" style="padding-right: 250px;">
-                        <div class="huddle_container">
-                            <img src="img/logo.svg" align="left" style="">
-                            <h1 style="color: white; margin: 0px;">HUDDLE</h1>
+                <img id="svg_images" src="img/bg-footer-top-desktop.svg">
+                <div class="footer_container">
+                    <div class="footer_right_child">
+                        <h3 style="color: white; padding-bottom: 15px;">NEWSLETTER</h3>
+                        <p style="color: white; padding-bottom: 25px;">To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never 
+                            send you spam or pass on your email address</p>
+                        <form action="">
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="fname">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="footer_container_child">
+                        <div class="huddle_container" style="padding-top:10%;">
+                            <img src="img/icon-messages.svg">
+                            <h1 style="color: white; padding-left: 10px">Huddle</h1>
                         </div>
-                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+                        <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
                             vestibulum a, ultrices quis sem. </p>
                         <div class="huddle_container" style="padding-top: 20px; padding-botom: 20px;">
                             <img src="img/icon-phone.svg">
@@ -108,11 +119,12 @@
                             <p style="color: white; padding-left: 20px;">example@huddle.com</p>
                         </div>
                     </div>
-                    <div class="stat_container_child" style="padding-right: 20px;">
-                        <h1 style="color: white; padding-bottom: 15px;">NEWSLETTER</h1>
-                        <p style="color: white;">To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never 
-                            send you spam or pass on your email address</p>
-                    </div>
+                </div>
+                <div class="footer_icons">
+                    <a class="icons" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true" style="color: white; padding-right: 15px;"></i></a>
+                    <a class="icons" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: white; padding-right: 15px;"></i></a>
+                    <a class="icons" href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: white;"></i></a>
+                </div>
             </footer>
         </main>
     </body>
