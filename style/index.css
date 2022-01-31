@@ -284,8 +284,15 @@ input[type=submit] {
     padding-right: 15px;
 }
 
-.icons:hover {
-    /*opacity: .5;*/
+.fa-facebook-official:hover {
+    color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #4267B2;
+}
+
+.fa-twitter-square:hover {
     color: #4267B2;
 }
 
@@ -484,7 +491,7 @@ input[type=submit] {
     }
     #lorem {
         text-align: start;
-        padding: 0px 0px 55px 0px;
+        padding: 0px 0px 40px 0px;
         color: white;
     }
     input[type=email] {
