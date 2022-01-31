@@ -280,11 +280,13 @@ input[type=submit] {
 }
 
 .icons {
-    color: aqua;
+    color: white;
+    padding-right: 15px;
 }
 
 .icons:hover {
-    opacity: .5;
+    /*opacity: .5;*/
+    color: #4267B2;
 }
 
 #lorem {
