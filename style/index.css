@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Open Sans';
+    color: hsl(192, 100%, 9%);
 }
 
 .navigation {
@@ -77,7 +78,7 @@ body {
 #sentence {
     font-family: 'Open Sans';
     font-weight: 400;
-    padding-right: 25px;
+    padding-top: 10px;
 }
 
 .community_section .section_child h1 {
@@ -110,6 +111,7 @@ body {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .getting_started_btn:hover {
@@ -123,6 +125,7 @@ body {
 
 #user_flow {
     text-align: start;
+    padding-top: 25px;
 }
 
 .stat_container {
@@ -175,15 +178,37 @@ body {
     margin-bottom: 10%;
 }
 
-.flowing_user {
-    padding-top: 120px;
-    padding-left: 10%px;
+#user_container_style div {
+    background-color: white;
+}
+
+.your_user_container {
+    display: flex;
+    grid-template-columns: auto auto;
+    padding-left: 10%;
     padding-right: 10%;
+    margin: auto;
+    background-color: hsl(207, 100%, 98%);
+    flex-direction: row-reverse;
+}
+
+#grow_together_text {
+    padding: 10% 10% 10% 0%;
+    text-align: justify;
+}
+
+#grow_together_text h1 {
+    padding: 15px 0px 15px 0px;
+}
+
+.flowing_user {
+    padding-top: 10%;
+    padding-left: 10%;
 }
 
 .users {
-    padding-top: 15%;
-    padding-right: 150px;
+    padding-top: 10%;
+    padding-right: 10%;
 }
 
 .heading {
@@ -195,7 +220,16 @@ body {
 .huddle_container {
     display: flex;
     justify-content: left;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.huddle_container h1 {
+    padding-left: 10px;
+}
+
+.huddle_container p {
+    padding-left: 20px;
 }
 
 .top_section_1_img {
@@ -212,7 +246,7 @@ body {
 }
 
 input[type=email] {
-    width: 70%;
+    width: 65%;
     padding: 12px 20px;
     border: none;
     margin: 8px 0;
@@ -232,17 +266,17 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 8%;
     text-decoration: none;
     margin: 4px 2px;
-    margin-left: 12px;
+    margin-left: 14px;
     cursor: pointer;
 }
 
 .footer_icons {
     background-color: hsl(192, 100%, 9%);
     padding-left: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .icons {
@@ -255,6 +289,7 @@ input[type=submit] {
 
 #lorem {
     color: white;
+    padding-bottom: 25px;
 }
 
 .footer_container {
@@ -268,11 +303,21 @@ input[type=submit] {
 }
 
 .footer_container_child {
-    padding-right: 250px;
+    margin-right: 10%;
 }
 
 .footer_right_child {
-    padding-right: 20px;
+    padding-right: 0px;
+    color: white;
+}
+
+.footer_right_child h3 {
+    padding-bottom: 30px;
+}
+
+.footer_right_child p {
+    padding-bottom: 25px;
+    padding-right: 25%;
 }
 
 .footer_img {
@@ -304,7 +349,6 @@ input[type=submit] {
         font-size: 16px;
         transition-duration: 0.4s;
         cursor: pointer;
-        float: right;
     }
     .button:hover {
         color: hsl(322, 65%, 87%);
@@ -342,6 +386,7 @@ input[type=submit] {
         display: block;
         text-align: justify;
         margin-left: 10%;
+        margin-top: 100px;
     }
     .stat_container_child h2 {
         font-weight: 700;
@@ -364,6 +409,17 @@ input[type=submit] {
     #svg_images {
         width: 60%;
         display: block;
+    }
+    #grow_together_text {
+        text-align: center;
+        margin: 0;
+        padding: 0 0 25px 0;
+    }
+    .grow_img {
+        padding: 20% 0 20% 0;
+    }
+    .flow_img {
+        padding: 20% 0 0 0;
     }
     .user_container {
         display: block;
@@ -415,14 +471,18 @@ input[type=submit] {
         margin: 0% 10% 0% 10%;
     }
     .footer_right_child {
-        text-align: justify;
+        text-align: start;
+    }
+    .footer_right_child p {
+        padding-right: 0;
     }
     .footer_container_child {
-        padding: 40% 5% 10% 5%;
+        padding: 60% 0% 10% 0%;
+        margin-right: 0%;
     }
     #lorem {
-        text-align: justify;
-        padding: 20px 0px 20px 0px;
+        text-align: start;
+        padding: 0px 0px 55px 0px;
         color: white;
     }
     input[type=email] {
@@ -460,7 +520,6 @@ input[type=submit] {
         width: 100%;
         display: block;
         content: url("../img/bg-section-top-mobile-1.svg");
-        justify-content: center;
     }
     .top_section_2_img {
         width: 100%;
